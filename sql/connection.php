@@ -7,47 +7,24 @@
 </head>
 <body>
     <?php
-        $connection  =  pg_connect("host=localhost dbname=my_database user=postgres password=postgres");
-        
-        if(!$connection){
-            echo "An error occured";
-            exit;
-        }
+        $host = "localhost";
+        $user = "postgres";
+        $password = "postgres";
+        $dbname = "my_database";
 
-        $result = pg_query($connection, "SELECT * FROM records");
+        //code to connect to the database
+        $pdo = new PDO("pgsql:host=$host;dbname=$dbname", $user, $password);
+        $connection = pg_connect("host=localhost dbname=my_database user=postgres password=postgres");
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        if (!$result){
-            echo "an error occured in displaying the data";
+        if (!$pdo){
+                echo"an error occured when connecting to the database";
                 exit;
+        }else{
+            echo"connected successfully <br>";
+            
         }
     ?>
-
-    <table border=1>
-
-        <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>age</th>
-            <th>city</th>
-            <th>county</th>
-            <th>phone</th>
-        </tr>
-
-        <?php
-            while($row=pg_fetch_assoc($result)){
-                echo"
-                     <tr>
-                        <td>$row[id]</td>
-                        <td>$row[name]</td>
-                        <td>$row[age]</td>
-                        <td>$row[city]</td>
-                        <td>$row[country]</td>
-                        <td>$row[phone]</td>
-                    </tr>
-                ";
-            }
-        ?>
-
-    </table>
+    
 </body>
 </html>
