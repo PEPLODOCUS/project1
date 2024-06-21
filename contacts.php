@@ -1,5 +1,5 @@
 <?php
-require_once ("SQL/connection.php");
+require_once ("sql/connection.php");
 include_once ("templates/heading.php");
 include_once ("templates/nav.php");
 
@@ -48,6 +48,6 @@ if(isset($_POST["send_message"])){
         <input type="submit" name="send_message" value="Send Message">
     </form>
                 </div>
-<?php include_once ("templates/side_bar.php"); ?>
+<?php include_once ("templates/sidebar.php"); ?>
         </div>
 <?php include_once ("templates/footer.php"); ?>
