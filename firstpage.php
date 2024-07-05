@@ -9,9 +9,9 @@
 <body>
     <h1> FREE GAMES <br>   </h1>
 
-    <a href="file:///D:/xampp/htdocs/project1/secondpage.html">Products |</a>
-    <a href="file:///D:/xampp/htdocs/project1/seventhpage.html">Contact us |</a>
-    <a href="file:///D:/xampp/htdocs/project1/sixthpage.html">About Us |</a>
+    <a href="file:///D:/xampp/htdocs/project1/secondpage.php">Products |</a>
+    <a href="file:///D:/xampp/htdocs/project1/seventhpage.php">Contact us |</a>
+    <a href="file:///D:/xampp/htdocs/project1/sixthpage.php">About Us |</a>
     <a href=""></a>
     <a href=""></a>
 

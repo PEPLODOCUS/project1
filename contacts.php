@@ -1,15 +1,20 @@
 <?php
-require_once ("sql/connection.php");
+require_once ("Includes/db_connect.php");
 include_once ("templates/heading.php");
 include_once ("templates/nav.php");
 
-if(isset($_POST["send_message"])){
-    $fn = mysqli_real_escape_string($conn, $_POST["fullname"]);
-    $mail = mysqli_real_escape_string($conn, $_POST["email_address"]);
-    $subject = mysqli_real_escape_string($conn, $_POST["subject_line"]);
-    $message = mysqli_real_escape_string($conn, $_POST["client_message"]);
 
-    $insert_message = "INSERT INTO messages (sender_name, sender_email, subject_line, text_message) VALUES ('$fn', '$mail', '$subject', '$message')";
+
+
+if(isset($_POST["send_message"])){
+    $ui = 4356;
+    $fn = "david";
+    $mail = "david@gmail.com";
+    $message = "please work";
+    $date = 5;
+
+
+    $insert_message = "INSERT INTO contacts (userid , fullname , email , message ,datecreated) VALUES ('$ui','$fn', '$mail', '$message','$date')";
 
     if ($conn->query($insert_message) === TRUE) {
         header("Location: view_messages.php");
@@ -28,22 +33,21 @@ if(isset($_POST["send_message"])){
     <div class="content">
     <h1>Talk to Us</h1>
     <form action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="contacts_form">
+        
+        <label for="ui">UserId:</label><br>
+        <input type="number" id="ui" placeholder="userId" name="userId" required><br><br>
+
         <label for="fn">Fullname:</label><br>
         <input type="text" id="fn" placeholder="Fullname" name="fullname" required><br><br>
 
         <label for="em">Email Address:</label><br>
         <input type="email" id="em" placeholder="Email Address" name="email_address" required><br><br>
 
-        <label for="sb">Subject:</label><br>
-        <select name="subject_line" id="sb" required>
-            <option value="">---Select Subject-</option>
-            <option value="Email Support">Email Support</option>
-            <option value="eLearning Support">eLearning Support</option>
-            <option value="AMS Support">AMS Support</option>
-        </select><br><br>
-
-        <label for="sb">Message:</label><br>
+        <label for="cm">Message:</label><br>
         <textarea name="client_message" id="" cols="30" rows="5" required></textarea><br><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" placeholder="date created" name="date created" ><br><br>
 
         <input type="submit" name="send_message" value="Send Message">
     </form>

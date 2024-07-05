@@ -27,7 +27,7 @@
         }
 
         //data to be inserted
-        $id = 12;
+        $id = 13;
         $name = "Moth";
         $age = 59 ;
         $city = " Turkaana";
