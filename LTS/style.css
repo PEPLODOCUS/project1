@@ -1,10 +1,20 @@
-.head{
-    position: fixed;
+.head {
+    position: relative;
     width: 100%;
-
+    color: black;
 }
 
-.navbar{
-    font-size: 2px;
-    margin-left: 50px;
+.navelement {
+    display: block;
+    background-color: white;
+    transition-duration: 0.7s;
+    text-align: center;
+    width: 100px;
+}
+
+.navelement:hover {
+    background-color: lightsteelblue;
+    color: black;
+    cursor: pointer;
+    transform: translate(20px);
 }
