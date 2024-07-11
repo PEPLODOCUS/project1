@@ -22,7 +22,7 @@
                     <a href="/TBP//#Menu"> Our Menu</a>
                 </li>
                 <li class="navelement">
-                    <a href="hours.html">hours</a>
+                    <a href="hours.php">hours</a>
                 </li>
             </ul>
         </nav>
@@ -78,9 +78,6 @@
         </section>
     </main>
     <hr>
-    <footer>
-        <p>Copyright &copy; THE BURGER PLACE</p>
-    </footer>
 </body>
-
 </html>
+<?php include_once ("footer.php"); ?>

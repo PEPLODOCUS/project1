@@ -20,10 +20,10 @@
                     <a href="#Menu">Our Menu</a>
                 </li>
                 <li class="navelement">
-                    <a href="hours.html">Store Hours</a>
+                    <a href="hours.php">Store Hours</a>
                 </li>
                 <li class="navelement">
-                    <a href="contact.html">Contact Us</a>
+                    <a href="contact.php">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -112,9 +112,6 @@
         </article>
     </main>
     <hr>
-    <footer>
-        <p>Copyright &copy; THE BURGER PLACE </p>
-    </footer>
 </body>
-
 </html>
+<?php include_once ("footer.php"); ?>

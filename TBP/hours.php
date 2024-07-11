@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li class="navelement">
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li class="navelement">
                     <a href="/TBP//#About">About<abbr title="The Little Taco Shop">LTS</abbr></a>
@@ -23,7 +23,7 @@
                     <a href="/TBP//#Menu"> Our Menu</a>
                 </li>
                 <li class="navelement">
-                    <a href="contact.html">Contact Us</a>
+                    <a href="contact.php">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -49,9 +49,6 @@
         <p><a href="#">Back To Top</a></p>
     </main>
     <hr>
-    <footer>
-        <p>Copyright &copy; THE BURGER PLACE </p>
-    </footer>
 </body>
-
 </html>
+<?php include_once ("footer.php"); ?>

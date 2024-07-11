@@ -9,7 +9,7 @@
     
 
     <div class="footer">
-        Copyright &copy;<?php  print date("Y"); ?>
+        Copyright &copy;<?php  print date("Y"); ?>   THE BURGER PLACE <br>
         - Allrights reserved - BBIT 2.1;
     </div>
 </body>
