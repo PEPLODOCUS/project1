@@ -6,7 +6,10 @@
     if($_SERVER["REQUEST_METHOD"]=="POST"){
         //retrieve from data
         
-       
+        $name =  $_POST['name']; 
+        $email = $_POST['email'];
+        $age = $_POST['age'];
+        $message =  $_POST['message'];
 
         //prepare the statement
         $insert_message = "INSERT INTO messagestable VALUES ('$name' ,'$email','$age','$message')";
