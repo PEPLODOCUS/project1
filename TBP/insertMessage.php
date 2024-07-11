@@ -5,12 +5,11 @@
     //check if the form has been submitted
     if($_SERVER["REQUEST_METHOD"]=="POST"){
         //retrieve from data
-        $id = $_POST['id'];
-        $name =  $_POST['name']; 
-        $message =  $_POST['message'];
+        
+       
 
         //prepare the statement
-        $insert_message = "INSERT INTO mytb VALUES ('$id' , '$name' , '$message')";
+        $insert_message = "INSERT INTO messagestable VALUES ('$name' ,'$email','$age','$message')";
 
         //execute the statement
         if ($conn->query($insert_message)==TRUE){

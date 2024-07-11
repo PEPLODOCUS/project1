@@ -8,12 +8,13 @@
      //check if the form has been submitted
      if($_SERVER["REQUEST_METHOD"]=="POST"){
         //retrieve from data
-        $id = $_POST['id'];
         $name =  $_POST['name']; 
+        $email = $_POST['email'];
+        $age = $_POST['age'];
         $message =  $_POST['message'];
 
         //prepare the statement
-        $updatemessage = "UPDATE mytb SET id='$id', name='$name', message='$message' WHERE id=$id";        
+        $updatemessage = "UPDATE messagestable SET  name='$name',email = '$email',age = '$age', message='$message' WHERE name='$name'";        
 
         //execute the statement
         if ($conn->query($updatemessage)==TRUE){

@@ -4,16 +4,17 @@
 //check if the form has been filled
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     //retrieve data from the form
-        $id = $_POST['id'];
-        $name =  $_POST['name']; 
-        $message =  $_POST['message'];
+    $name =  $_POST['name']; 
+    $email = $_POST['email'];
+    $age = $_POST['age'];
+    $message =  $_POST['message'];
     //create the statement
-    $deleteMessage = "UPDATE mytb SET id='$id', name='$name', message='NULL' WHERE id=$id";
+    $deleteMessage = "UPDATE messagestable SET name='$name',email ='$email',age ='$age', message='NULL' WHERE name='$name'";
     //execute the statement
     if ($conn->query($deleteMessage)==TRUE){
         echo "Message deleted successfully";
     }else{
-        echo"Error : CCould not delete the message";
+        echo"Error : Could not delete the message";
     }
 }
 ?>
