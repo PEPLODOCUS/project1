@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li class="navelement">
-                    <a href="index.html">Home</a>
+                    <a href="index.php">Home</a>
                 </li>
                 <li class="navelement">
                     <a href="/TBP//#About">About<abbr title="The Little Taco Shop">LTS</abbr></a>
@@ -65,6 +65,7 @@
                 <button type="reset">CLEAR</button>
                 <button type="submit" formaction="deleteMessage.php">DELETE MESSAGE</button>
                 <button type="submit" formaction="updateMessage.php">UPDATE</button>
+                
             </form>
         </section>
         <section>

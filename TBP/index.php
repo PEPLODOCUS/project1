@@ -11,7 +11,6 @@
 <body>
     <header class="head">
         <h1>Welcome To THE BURGER PLACE</h1>
-        <nav class="navbar">
             <ul>
                 <li class="navelement">
                     <a href="#About">About<abbr title="THE BURGER PLACE">TBP</abbr></a>
@@ -20,7 +19,7 @@
                     <a href="#Menu">Our Menu</a>
                 </li>
                 <li class="navelement">
-                    <a href="hours.php">Store Hours</a>
+                    <a href="hours.php">Store Hours</a> 
                 </li>
                 <li class="navelement">
                     <a href="contact.php">Contact Us</a>

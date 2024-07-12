@@ -25,6 +25,7 @@
 
         //close the connection
         $conn->close();
+
     }
 
 ?>
