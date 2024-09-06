@@ -1,18 +1,18 @@
-.navelement{
-    display:block;
+.navelement {
+    display: list-item;
     padding: 10px;
     background-color: gray;
     color: black;
     transition-duration: 0.7s;
     text-align: center;
     width: 100px;
-    float:left;
+    float: left;
 }
 
-.navelement:hover{
+.navelement:hover {
     background-color: lightsteelblue;
     color: blue;
-    cursor:pointer;
+    cursor: pointer;
     transform: translate(20px);
-    text-decoration:dotted;
+    text-decoration: dotted;
 }
